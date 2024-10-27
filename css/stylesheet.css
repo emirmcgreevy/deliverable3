@@ -1,0 +1,177 @@
+/* Default: Light Mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: rgb(21, 36, 74);
+  --link-color: rgb(21, 36, 74);
+  --link-hover-color: #ad0000;
+  --header-footer-bg: #B5DBFB;
+  --table-header-bg: #f2f2f2;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* General Link Styles */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+button:active, a:active {
+  background-color: #f0f0f0;
+  color: #ad0000;
+  transform: scale(0.98); 
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: var(--header-footer-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Header Specific */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  background-color: var(--header-footer-bg);
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h1 img {
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--table-header-bg);
+}
+
+/* Footer Styles */
+footer p {
+  margin-bottom: 0;
+}
+
+/* Logo Style */
+.logo {
+  height: 80px;
+  margin-right: 0.5rem;
+  vertical-align: bottom; 
+}
+
+/* Header Style */
+.headshot {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Roster Names Style */
+li a {
+  font-size: 18px;
+}
+
+.skip-link {
+  background-color: #B5DBFB;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation: none;
+      transition: none;
+  }
+}
+
+/* Dark Mode: Applies when the user's system preference is dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(21, 36, 74);
+    --text-color: #e0e0e0;
+    --link-color: #8ab4f8;
+    --link-hover-color: #ffffff;
+    --header-footer-bg: rgb(31, 54, 111);
+    --table-header-bg: rgb(31, 54, 111);
+    --border-color: #444;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  header, footer {
+    background-color: var(--header-footer-bg);
+  }
+
+  a {
+    color: var(--link-color);
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+  }
+
+  th {
+    background-color: var(--table-header-bg);
+  }
+
+  .skip-link {
+    background-color: rgb(31, 54, 111);
+  }
+  
+}
