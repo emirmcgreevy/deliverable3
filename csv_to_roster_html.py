@@ -24,15 +24,16 @@ def process_athlete_data(file_path):
 
 def gen_team_roster_page(athletes, outfile, title):
     html_content = f'''
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/91e0ab759a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - Skyline High School Cross Country</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <base href="/">
 </head>
 <body>
     <header>
@@ -42,9 +43,9 @@ def gen_team_roster_page(athletes, outfile, title):
         </h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mens_roster.html">Men's Team</a></li>
-                <li><a href="womens_roster.html">Women's Team</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../mens_roster.html">Men's Team</a></li>
+                <li><a href="../womens_roster.html">Women's Team</a></li>
             </ul>
         </nav>
     </header>
@@ -84,6 +85,7 @@ def gen_team_roster_page(athletes, outfile, title):
             </a>
         </p>
     </footer>
+    <script src="/js/script.js"></script>
     </body>
     </html>
     '''

@@ -29,6 +29,11 @@ button:active, a:active {
   transform: scale(0.98); 
 }
 
+/* Navigation Link Color */
+button:active, nav li a:active{
+  color: rgb(21, 36, 74);
+}
+
 /* Header and Footer Styles */
 header, footer {
   background-color: var(--header-footer-bg);
@@ -52,8 +57,13 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  margin: 0 1rem;
+nav li a {
+  margin: 0.5rem;
+  border-style: solid;
+  border-color:rgb(21, 36, 74);
+  background-color: rgb(21, 36, 74);
+  color: #B5DBFB;
+  transition: all 0.8s ease-out;
 }
 
 /* Main Content Styles */
@@ -123,21 +133,21 @@ li a {
   font-size: 18px;
 }
 
+/* Skip Main Content Link */
 .skip-link {
   background-color: #B5DBFB;
   padding: 10px;
   text-decoration: none;
 }
 
-
+/* Used to address users with reduced motion settings */
 @media (prefers-reduced-motion: reduce) {
-  * {
-      animation: none;
+  nav li a {
       transition: none;
   }
 }
 
-/* Dark Mode: Applies when the user's system preference is dark mode */
+/* used to address users with mobile devices on dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: rgb(21, 36, 74);
@@ -174,4 +184,59 @@ li a {
     background-color: rgb(31, 54, 111);
   }
   
+}
+
+/* Tablet Screen Size */
+@media screen and (min-width: 600px) {
+  /* Align Header Information in the center */
+  header {
+    text-align: center;
+  }
+
+  h1 {
+    display: inline-block
+  }
+
+  nav ul {
+    display: inline-block;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav li a {
+    font-size: 1.25rem;
+  }
+
+  /* Font adjustment */
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  th {
+    font-size: 1.25rem;
+  }
+
+  a {
+    font-size: 1.25rem;
+  }
+  
+  /* Hover instead of button activate */
+  a:hover {
+    background-color: #f0f0f0;
+    color: #ad0000;
+    transform: scale(0.98);
+  }
+  
+  nav li a:hover{
+    color: rgb(21, 36, 74);
+  }
+
+  /* Navigation Set Up */
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
 }
