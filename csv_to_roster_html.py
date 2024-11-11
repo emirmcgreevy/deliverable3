@@ -31,8 +31,8 @@ def gen_team_roster_page(athletes, outfile, title):
     <script src="https://kit.fontawesome.com/91e0ab759a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - Skyline High School Cross Country</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <body>
     <header>
