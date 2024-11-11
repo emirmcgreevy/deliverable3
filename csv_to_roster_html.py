@@ -43,9 +43,9 @@ def gen_team_roster_page(athletes, outfile, title):
         </h1>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/mens_roster.html">Men's Team</a></li>
-                <li><a href="/womens_roster.html">Women's Team</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./mens_roster.html">Men's Team</a></li>
+                <li><a href="./womens_roster.html">Women's Team</a></li>
             </ul>
         </nav>
     </header>
