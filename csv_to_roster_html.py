@@ -33,7 +33,6 @@ def gen_team_roster_page(athletes, outfile, title):
     <title>{title} - Skyline High School Cross Country</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
-    <base href="/">
 </head>
 <body>
     <header>

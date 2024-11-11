@@ -52,7 +52,6 @@ def gen_athlete_page(data, outfile):
 
       <link rel = "stylesheet" href = "../css/reset.css">
       <link rel = "stylesheet" href = "../css/stylesheet.css">
-      <base href="/">
       
       <title>{data["name"]}</title>
    </head>
